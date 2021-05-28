@@ -1,0 +1,189 @@
+{% extends "src/_includes/baseToExtend.njk" %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+  {# carousel #}
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" style="overflow: visible;">
+      <div class="carousel-item active">
+        <div class="d-block w-100" style="max-height: 600px; height: 80vw; overflow: hidden; background-image: url('/assets/img/slide-1.png');background-repeat: no-repeat;background-position: center; background-size: cover;">
+        </div>
+        <div class="carousel-caption d-flex h-100">
+          <div class="col-12 col-md-6 my-auto text-left d-none d-md-block">
+            <h1 class="text-white">Lo que no se mide no existe</h1>
+            <p class="h5 font-weight-normal text-white">
+              ¿Estás trabajando en una Organización No Gubernamental (ONG) y no sabes si has logrado los objetivos que te planteaste?
+              Te presentamos 10 simples pasos para que puedas autoevaluarte y entender cómo aumentar el impacto en el cambio social
+              que buscas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {# main #}
+  <div class="w-100 bg-white d-md-none">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 mb-2 text-center">
+          <h1 class="d-md-none">Lo que no se mide no existe</h1>
+          <p class="h5 font-weight-normal d-md-none">
+            ¿Estás trabajando en una Organización No Gubernamental (ONG) y no sabes si has logrado los objetivos que te
+            planteaste?
+            Te presentamos 10 simples pasos para que puedas autoevaluarte y entender cómo aumentar el impacto en el cambio
+            social
+            que buscas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-100">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 mb-2 col-md-12 text-center">
+          <h2 class="mb-2">
+            ¿Qué es ImpactaLatam?
+          </h2>
+          <p class="h5 font-weight-normal">
+            Somos un proyecto de 15 ONG latinoamericanas que trabajan en democracia, gobernanza y derechos humanos para construir
+            herramientas que simplifiquen el proceso de evaluación y monitoreo del impacto.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 bg-white">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 mb-2 col-md-12 text-center">
+          <h2 class="mb-2">
+            ¿Cómo lo hacemos?
+          </h2>
+          <p class="h5 font-weight-normal">
+            Generamos una red colaborativa y herramientas que se adecuan a los recursos, necesidades y contexto de este tipo de
+            organizaciones en la región.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 bg-primary">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 mb-2 col-md-12 text-center">
+          <h1 class="mb-2 text-white">
+            ¡Es lo que necesito!<br>
+            Mi organización está lista para aumentar su impacto.
+          </h1>
+          <p class="h3">
+            Generamos una red colaborativa y herramientas que se adecuan a los recursos, necesidades y contexto de este
+            tipo de organizaciones en la región.
+          </p>
+          <a href="/contacto" class="btn btn-secondary p-2 rounded-pill px-3 h4 text-white font-weight-medium">
+            Contáctanos
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-100 bg-white">
+    <div class="container py-5 logos-bar">
+      <div class="row">
+        <div class="col-12 mb-2 text-center">
+          <h1>Organizaciones de la alianza</h1>
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/NED.png" alt="NED" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/07_RED.png" alt="Red Ciudadana" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/04_CD.png" alt="Ciudadanía y Desarrollo" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/01_AS.png" alt="Asuntos del Sur" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/06_CI.png" alt="Ciudadanía Inteligente" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/099_AC.png" alt="Acción Colectiva" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/02_REGION.png" alt="Región" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/08_PODER.png" alt="Poder" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/05_DIALOGOS.png" alt="DIALOGOS" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/03_1001-IDEAS.png" alt="1001 Ideas" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/ahora nos toca participar.png" alt="Ahora nos toca participar" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/CONSTRUIR.jpg" alt="Construir" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/ICCPG.png" alt="ICCPG" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/japiqay.png" alt="JAPIQAY" class="img-fluid w-100 px-3 my-auto">
+        </div>
+        <div class="col-12 col-md-3 mb-2 d-flex">
+          <img src="/assets/img/logos/ChT.png" alt="Chile Transparente" class="img-fluid w-100 px-3 my-auto">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    #rss-container h2 {
+      font-size: 1rem;
+    }
+
+    #rss-container .excerpt {
+      display: none;
+    }
+
+    #rss-container .excerpt h3 {
+      font-size: 1rem !important;
+      font-weight: normal !important;
+    }
+
+    #rss-container .col-sm-3 {
+      margin-bottom: 1rem;
+      /* border: 1px solid #dee2e6 !important; */
+      /* padding: 0; */
+    }
+
+    #rss-container .post-date {
+      display: none;
+    }
+
+    #rss-container .read-more {
+      text-align: left;
+      padding: 0.5rem 0 0.5rem 0;
+    }
+
+    .rtb-close {
+      z-index: 1000;
+    }
+  </style>
+{% endblock %}
+
+{% block body_javascripts %}
+{% endblock %}

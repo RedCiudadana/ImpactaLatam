@@ -1,0 +1,129 @@
+// Theme colors
+
+$primary : #3DA8DD;
+$secondary : #293858;
+$light : #E7EDF7;
+$body-color: #293858;
+$dark: #B8C6CE;
+$warning : #F9C150;
+$spacer: 2rem;
+
+// Theme fonts
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Regular"), local("Roboto-Regular"),
+    url("fonts/Roboto-Regular.ttf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Roboto SemiBold"), local("Roboto-SemiBold"),
+    url("fonts/Roboto-SemiBold.ttf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("fonts/Roboto-Bold.ttf") format("opentype");
+  font-display: swap;
+}
+
+$font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/_mixins.scss";
+@import "../node_modules/bootstrap/scss/_root.scss";
+@import "../node_modules/bootstrap/scss/_reboot.scss";
+@import "../node_modules/bootstrap/scss/_buttons.scss";
+@import "../node_modules/bootstrap/scss/_type.scss";
+@import "../node_modules/bootstrap/scss/_images.scss";
+@import "../node_modules/bootstrap/scss/_code.scss";
+@import "../node_modules/bootstrap/scss/_grid.scss";
+@import "../node_modules/bootstrap/scss/_tables.scss";
+@import "../node_modules/bootstrap/scss/_forms.scss";
+@import "../node_modules/bootstrap/scss/_nav.scss";
+@import "../node_modules/bootstrap/scss/_navbar.scss";
+@import "../node_modules/bootstrap/scss/_pagination.scss";
+@import "../node_modules/bootstrap/scss/_badge.scss";
+@import "../node_modules/bootstrap/scss/_close.scss";
+@import "../node_modules/bootstrap/scss/_modal.scss";
+@import "../node_modules/bootstrap/scss/_carousel.scss";
+@import "../node_modules/bootstrap/scss/_utilities.scss";
+@import "../node_modules/bootstrap/scss/_transitions.scss";
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: #052630;
+  font-weight: bold;
+}
+
+body {
+    background-color: $light;
+    color: $body-color;
+}
+
+.btn-white {
+    @extend .btn-light;
+    @extend .bg-white;
+    @extend .border-light;
+}
+
+.btn-white:hover {
+    background-color: $primary !important;
+    color: white !important;
+    border-color: white !important;
+}
+
+#searchResults {
+  max-height: 10rem;
+  overflow: auto;
+  background: white;
+  // border: gray;
+  // border-radius: 2px;
+  // border-width: 1px;
+  // border-style: solid;
+  width: 100%;
+  position: relative;
+}
+
+.box {
+  margin-right: 3px;height: 15px; width: 25px;
+border : 1px solid #383838;
+
+}
+
+.logos-bar img {
+  filter: grayscale(75);
+}
+
+.logos-bar img:hover {
+  filter: unset;
+}
+
+.form-control {
+  background: #E7EDF7;
+  border: 0;
+  border-bottom: 1px solid;
+  border-radius: 0;
+}

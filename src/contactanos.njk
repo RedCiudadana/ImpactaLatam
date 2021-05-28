@@ -1,0 +1,104 @@
+{% extends "src/_includes/baseToExtend.njk" %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-12">
+        <h1 class="mb-4 text-center">
+          Nos encantará conectar contigo para explorar cómo podemos innovar en equipo
+        </h1>
+
+        <form>
+          <h4 class="mb-4 text-center">
+            Soy de
+            <select name="tipo" id="tipo" class="mx-md-2">
+              <option value="ONG">ONG</option>
+              <option value="persona">persona</option>
+              <option value="financista">financista</option>
+            </select>
+            una en busca de
+            <select name="tipo" id="tipo" style="text-overflow: ellipsis;max-width: 200px;" class="mx-md-2">
+              <option value="herramientas">herramientas</option>
+              <option value="contacto con la red">contacto con la red</option>
+              <option value="compartir información y o propuestas">compartir información y o propuestas</option>
+              <option value="otro">otro</option>
+            </select>
+          </h4>
+          <div class="row">
+            <div class="form-group col-md-4">
+              <label class="text-uppercase" for="nombre">Nombre*</label>
+              <input type="text" class="form-control" id="nombre" required="true">
+            </div>
+            <div class="form-group col-md-4">
+              <label class="text-uppercase" for="apellido">Apellido*</label>
+              <input type="text" class="form-control" id="apellido" required="true">
+            </div>
+            <div class="form-group col-md-4">
+              <label class="text-uppercase" for="e-mail">E-MAIL*</label>
+              <input type="email" class="form-control" id="e-mail" required="true">
+            </div>
+            <div class="form-group col-md-4">
+              <label class="text-uppercase" for="pais">PAÍS*</label>
+              <input type="text" class="form-control" id="pais" required="true">
+            </div>
+            <div class="form-group col-md-4">
+              <label class="text-uppercase" for="organizacion">ORGANIZACIÓN O GOBIERNO*</label>
+              <input type="text" class="form-control" id="organizacion" required="true">
+            </div>
+            <div class="form-group col-md-4">
+              <label class="text-uppercase" for="web">DIRECCIÓN WEB</label>
+              <input type="text" class="form-control" id="web" required="true">
+            </div>
+            <div class="form-group col-md-12">
+              <label class="text-uppercase" for="mensaje">Mensaje*</label>
+              <textarea class="form-control" id="mensaje" required="true" name="mensaje" id="mensaje"></textarea>
+            </div>
+            <div class="col-12 d-flex">
+              <button class="btn btn-warning text-white rounded-pill px-3 py-1 mx-auto text-uppercase" type="submit">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    #rss-container h2 {
+      font-size: 1rem;
+    }
+
+    #rss-container .excerpt {
+      display: none;
+    }
+
+    #rss-container .excerpt h3 {
+      font-size: 1rem !important;
+      font-weight: normal !important;
+    }
+
+    #rss-container .col-sm-3 {
+      margin-bottom: 1rem;
+      /* border: 1px solid #dee2e6 !important; */
+      /* padding: 0; */
+    }
+
+    #rss-container .post-date {
+      display: none;
+    }
+
+    #rss-container .read-more {
+      text-align: left;
+      padding: 0.5rem 0 0.5rem 0;
+    }
+
+    .rtb-close {
+      z-index: 1000;
+    }
+  </style>
+{% endblock %}
+
+{% block body_javascripts %}
+{% endblock %}
