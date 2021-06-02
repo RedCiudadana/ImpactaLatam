@@ -127,3 +127,10 @@ border : 1px solid #383838;
   border-bottom: 1px solid;
   border-radius: 0;
 }
+
+@include media-breakpoint-up(md) {
+  .col-1\/5 {
+    max-width: 20%;
+    flex: 0 0 20%;
+  }
+}
