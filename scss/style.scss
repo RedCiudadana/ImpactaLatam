@@ -15,7 +15,7 @@ $spacer: 2rem;
   font-style: normal;
   font-weight: 400;
   src: local("Roboto Regular"), local("Roboto-Regular"),
-    url("fonts/Roboto-Regular.ttf") format("opentype");
+    url("/assets/fonts/Roboto-Regular.ttf") format("opentype");
   font-display: swap;
 }
 
@@ -24,7 +24,7 @@ $spacer: 2rem;
   font-style: normal;
   font-weight: 600;
   src: local("Roboto SemiBold"), local("Roboto-SemiBold"),
-    url("fonts/Roboto-SemiBold.ttf") format("opentype");
+    url("/assets/fonts/Roboto-SemiBold.ttf") format("opentype");
   font-display: swap;
 }
 
@@ -33,7 +33,7 @@ $spacer: 2rem;
   font-style: normal;
   font-weight: 700;
   src: local("Roboto Bold"), local("Roboto-Bold"),
-    url("fonts/Roboto-Bold.ttf") format("opentype");
+    url("/assets/fonts/Roboto-Bold.ttf") format("opentype");
   font-display: swap;
 }
 
