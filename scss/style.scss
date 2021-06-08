@@ -74,7 +74,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  color: #052630;
+  color: $body-color;
   font-weight: bold;
 }
 
@@ -133,4 +133,12 @@ border : 1px solid #383838;
     max-width: 20%;
     flex: 0 0 20%;
   }
+}
+
+#mainNavbar .navbar-nav a.nav-link {
+  color: $secondary;
+}
+
+#mainNavbar .navbar-nav a.nav-link:hover {
+  color: $warning;
 }
