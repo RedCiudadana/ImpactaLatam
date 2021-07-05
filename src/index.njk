@@ -5,11 +5,10 @@
 
 {% block content %}
   {# carousel #}
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselHome" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselHome" data-slide-to="1"></li>
     </ol>
     <div class="carousel-inner" style="overflow: visible;">
       <div class="carousel-item active">
@@ -24,7 +23,33 @@
           </div>
         </div>
       </div>
+      <div class="carousel-item">
+        <div class="d-block w-100"
+          style="max-height: 600px; height: 80vw; overflow: hidden; background-image: url('/assets/img/slider_map.png');background-repeat: no-repeat;background-position: bottom center; background-size: contain; background-color: #3aa7de;">
+        </div>
+        <div class="carousel-caption container d-flex h-100 w-100" style="right: 0;bottom: 0; left: 0;">
+          <div class="col-12 col-md-7 my-auto ml-md-auto text-left d-none d-md-block">
+            <h1 class="text-white display-1 mb-0">
+              Nuestra Red
+            </h1>
+            <h1 class="textwhite">
+              15 organizaciones de 10 países
+            </h1>
+            <p class="h4 font-weight-bold">
+              Con un objetivo en común: Instalar la cultura de impacto en la región
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
   {# main #}
   <div class="w-100 bg-white d-md-none">
@@ -40,7 +65,7 @@
       </div>
     </div>
   </div>
-  <div class="w-100">
+  <div class="w-100 bg-white">
     <div class="container py-5">
       <div class="row">
         <div class="col-12 mb-2 col-md-12 text-center">
@@ -55,22 +80,116 @@
       </div>
     </div>
   </div>
-  <div class="w-100 bg-white">
+  <div class="w-100 bg-light">
     <div class="container py-5">
       <div class="row">
-        <div class="col-12 mb-2 col-md-12 text-center">
+        <div class="col-12 text-center">
           <h2 class="mb-2">
             Nuestros Objetivos
           </h2>
-          <ul class="text-left">
-            <li class="h5 font-weight-normal">
-              Fortalecer las capacidades de las organizaciones de la sociedad civil latinoamericana para evaluar el impacto de
-              proyectos relacionados a democracia, derechos humanos y gobernanza
-            </li>
-            <li class="h5 font-weight-normal">
-              Concientizar sobre buenas prácticas y fomentar una cultura de monitoreo y evaluación de impacto en la región.
-            </li>
-          </ul>
+        </div>
+        <div class="col-12 col-md-4 text-md-right pr-md-5 py-2">
+          <img src="/assets/img/ICONO_01.png" alt="Bombilla" class="img-fluid w-75">
+        </div>
+        <div class="col-12 col-md-8 mb-2 text-left align-self-center py-2">
+          <p class="h5 font-weight-normal">
+            Fortalecer las capacidades de las organizaciones de la sociedad civil latinoamericana para evaluar el impacto de
+            proyectos relacionados a democracia, derechos humanos y gobernanza
+          </p>
+        </div>
+        <div class="col-12 col-md-4 text-md-right pr-md-5 py-2">
+          <img src="/assets/img/ICONO_02.png" alt="Lupa y mapa" class="img-fluid w-75">
+        </div>
+        <div class="col-12 col-md-8 mb-2 text-left align-self-center py-2">
+          <p class="h5 font-weight-normal">
+            Concientizar sobre buenas prácticas y fomentar una cultura de monitoreo y evaluación de impacto en la región.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 bg-secondary">
+    <div class="container py-5">
+      <div class="row text-center">
+        <div class="col-12 mb-4">
+          <h2 class="text-primary">Co-creación</h2>
+          <h1 class="text-white"> Nuestro proceso <br> de co-creación</h1>
+          <p class="text-white">
+            Generamos una red colaborativa y co-creamos herramientas que se adecuan a los recursos, <br>
+            necesidades y contexto de este tipo de organizaciones en la región.
+          </p>
+        </div>
+        <div class="col-12 timeline d-block position-relative">
+          <div class="position-relative container-circle w-50 pr-4 left">
+            <div class="bg-primary px-4 py-2 rounded content">
+              <img src="/assets/img/ICONO_03.png" class="mb-1" alt="Carpetas" width="100px">
+              <h4>Diagnóstico</h4>
+              <p class="mb-0">
+                Sobre las prácticas, capacidades actuales, incentivos y desafíos de medición de impacto de los aliados.
+              </p>
+            </div>
+          </div>
+          <div class="position-relative container-circle w-50 ml-auto pl-4 right">
+            <div class="bg-white px-4 py-2 rounded content" style="margin-top: -30px;">
+              <img src="/assets/img/ICONO_04.png" class="mb-1" alt="Carpetas" width="100px">
+              <h4>Co-creación</h4>
+              <p class="mb-0">
+                Del toolkit.
+              </p>
+            </div>
+          </div>
+          <div class="position-relative container-circle w-50 pr-4 left_white">
+            <div class="bg-white px-4 py-2 rounded content" style="margin-top: -30px;">
+              <img src="/assets/img/ICONO_05.png" class="mb-1" alt="Carpetas" width="100px">
+              <h4>Retroalimentación</h4>
+              <p class="mb-0">
+                Para hacer adaptaciones y lograr una versión final mejorada.
+              </p>
+            </div>
+          </div>
+          <div class="position-relative container-circle w-50 ml-auto pl-4 right">
+            <div class="bg-white px-4 py-2 rounded content" style="margin-top: -30px;">
+              <img src="/assets/img/ICONO_06.png" class="mb-1" alt="Carpetas" width="100px">
+              <h4>Lanzamiento</h4>
+              <p class="mb-0">
+                Esta herramienta ahora está disponible para que todxs lxs actorxs de la región que buscan fortalecer
+                la democracia, los derechos humanos y la gobernanza logren. incrementar su impacto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 bg-white">
+    <div class="container py-5">
+      <div class="row text-center">
+        <div class="col-12 mb-3">
+          <h1>6 pasos para evaluar el impacto de tu proyecto</h1>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="/assets/img/ICONO_08.png" alt="Flechas" class="img-fluid mb-2" style="max-width: 180px;">
+          <h5>Crear la teoría de cambio</h5>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="/assets/img/ICONO_09.png" alt="Flechas" class="img-fluid mb-2" style="max-width: 180px;">
+          <h5>Identificar e involucrar a los destinatarixs</h5>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="/assets/img/ICONO_10.png" alt="Flechas" class="img-fluid mb-2" style="max-width: 180px;">
+          <h5>Conectar la evidencia</h5>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="/assets/img/ICONO_11.png" alt="Flechas" class="img-fluid mb-2" style="max-width: 180px;">
+          <h5>Planificar un cronograma de evaluación</h5>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="/assets/img/ICONO_12.png" alt="Flechas" class="img-fluid mb-2" style="max-width: 180px;">
+          <h5>Recolectar y almacenar la evidencia</h5>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="/assets/img/ICONO_13.png" alt="Flechas" class="img-fluid mb-2" style="max-width: 180px;">
+          <h5>Analizar y adaptar el proyecto</h5>
         </div>
       </div>
     </div>
