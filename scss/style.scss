@@ -239,30 +239,77 @@ border : 1px solid #383838;
   // border-color: transparent transparent transparent $primary;
 }
 
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+.container-circle {
+  width: 100%;
 }
 
-.container-circle::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -12px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 30px;
-  border-radius: 50%;
-  z-index: 1;
+.container-circle {
+  margin-top: 2rem;
+}
+
+@include media-breakpoint-up(md) {
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  .container-circle {
+    width: 50%;
+  }
+
+  .container-circle .content:not(:first-child) {
+    margin-top: -30px;
+  }
+
+  .container-circle::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;
+  }
 }
 
 .right::after {
   left: -12px;
+}
+
+.timeline .container-circle:hover .content {
+  background-color: $primary !important;
+}
+
+.timeline .container-circle.left_white:hover::before {
+  border-color: transparent transparent transparent $primary !important;
+}
+
+.timeline .container-circle.right:hover::before {
+  border-color: transparent $primary transparent transparent !important;
+}
+
+.slider-2 {
+  max-height: 600px;
+  height: 80vw;
+  overflow: hidden;
+  background-image: url('/assets/img/SLIDER_02.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  background-color: #3aa7de;
+}
+
+@include media-breakpoint-up(md) {
+  .slider-2 {
+    background-image: url('/assets/img/slider_map.png');
+  }
 }
