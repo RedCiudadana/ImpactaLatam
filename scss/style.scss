@@ -289,6 +289,10 @@ border : 1px solid #383838;
   background-color: $primary !important;
 }
 
+.timeline .container-circle:hover::after {
+  background-color: #FF9F55 !important;
+}
+
 .timeline .container-circle.left_white:hover::before {
   border-color: transparent transparent transparent $primary !important;
 }
