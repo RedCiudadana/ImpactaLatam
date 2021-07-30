@@ -5,11 +5,32 @@
 
 {% block content %}
 {# main #}
-<div class="w-100" style="background-image: url(/assets/metodologia/FRAME1/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;">
+<div class="w-100" style="background-image: url(/assets/metodologia/FRAME1/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;overflow: hidden;">
     <img src="/assets/metodologia/FRAME1/03.png" style="position: absolute;bottom: 0;left: 0;max-height: 80vh;max-width: 100vw;">
-    <img src="/assets/metodologia/FRAME1/04.png" class="d-none d-md-block" style="position: absolute;top: 4vh;left: 6vw;height: 60px;">
-    <img src="/assets/metodologia/FRAME1/04.png" class="d-none d-md-block" style="position: absolute;top: 12vh;right: 10vw;height: 80px;">
-    <img src="/assets/metodologia/FRAME1/04.png" class="d-none d-md-block" style="position: absolute;bottom: 12vh;right: 36vw;height: 120px;">
+    <img src="/assets/metodologia/FRAME1/04.png" class="d-none d-md-block cloud" style="position: absolute;top: 4vh;left: 6vw;height: 60px;">
+    <img src="/assets/metodologia/FRAME1/04.png" class="d-none d-md-block cloud" style="position: absolute;top: 12vh;right: 10vw;height: 80px;">
+    <img src="/assets/metodologia/FRAME1/04.png" class="d-none d-md-block cloud" style="position: absolute;bottom: 12vh;right: 36vw;height: 120px;">
+    <script>
+      anime.timeline({
+        targets: '.cloud',
+        // left: '240px',
+        // backgroundColor: '#FFF',
+        // borderRadius: ['0%', '50%'],
+        delay: 400,
+        duration: 5000,
+        endDelay: 600,
+        loop: true,
+        easing: 'easeInOutSine',
+        opacity: ['0%', '100%'],
+        easing: 'easeInOutSine'
+      })
+      .add({
+        translateX: 150,
+      })
+      .add({
+        translateX: 0,
+      });
+    </script>
     <div class="container h-100">
       <div class="row h-100">
         <div class="col-12 d-md-none text-center py-5">
@@ -27,10 +48,10 @@
       </div>
     </div>
   </div>
-  <div class="w-100" style="background-image: url(/assets/metodologia/FRAME2/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;">
+  <div class="w-100" style="background-image: url(/assets/metodologia/FRAME2/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;overflow: hidden;">
     <img src="/assets/metodologia/FRAME2/02.png" style="position: absolute;width: 100%;bottom: 0;">
-    <div class="container h-100" style="position: relative;">
-      <img src="/assets/metodologia/FRAME2/03.png" style="position: absolute;bottom: 80px;width: 25vw;">
+    <div class="container h-100" style="position: relative;overflow: hidden;">
+      <img src="/assets/metodologia/FRAME2/03.png" style="position: absolute;bottom: 80px;width: 25vw;max-width: 256px;">
       <div class="row h-100">
         <div class="col-12 text-center align-self-center">
           <img src="/assets/metodologia/FRAME2/04.png" alt="Icono" class="mb-3" width="80px">
@@ -41,7 +62,7 @@
       </div>
     </div>
   </div>
-  <div class="w-100" style="background-image: url(/assets/metodologia/FRAME3/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;">
+  <div class="w-100" style="background-image: url(/assets/metodologia/FRAME3/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;overflow: hidden;">
     <img src="/assets/metodologia/FRAME3/02.png" style="position: absolute;width: 100%;bottom: 0;">
     <div class="container h-100">
       <div class="row h-100">
@@ -54,7 +75,7 @@
       </div>
     </div>
   </div>
-  <div class="w-100" style="background-image: url(/assets/metodologia/FRAME4/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;">
+  <div class="w-100" style="background-image: url(/assets/metodologia/FRAME4/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;overflow: hidden;">
     <img src="/assets/metodologia/FRAME4/02.png" style="position: absolute;width: 100%;bottom: 0;">
     <div class="container h-100">
       <div class="row h-100">
@@ -67,7 +88,7 @@
       </div>
     </div>
   </div>
-  <div class="w-100" style="background-image: url(/assets/metodologia/FRAME5/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;">
+  <div class="w-100" style="background-image: url(/assets/metodologia/FRAME5/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;overflow: hidden;">
     <img src="/assets/metodologia/FRAME5/02.png" style="position: absolute;width: 100%;bottom: 0;">
     <div class="container h-100">
       <div class="row h-100">
@@ -80,7 +101,7 @@
       </div>
     </div>
   </div>
-  <div class="w-100" style="background-image: url(/assets/metodologia/FRAME6/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;">
+  <div class="w-100" style="background-image: url(/assets/metodologia/FRAME6/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;overflow: hidden;">
     <img src="/assets/metodologia/FRAME6/02.png" style="position: absolute;width: 100%;bottom: 0;">
     <div class="container h-100">
       <div class="row h-100">
@@ -93,7 +114,7 @@
       </div>
     </div>
   </div>
-  <div class="w-100" style="background-image: url(/assets/metodologia/FRAME7/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;">
+  <div class="w-100" style="background-image: url(/assets/metodologia/FRAME7/01.png);height: 100vh;background-size: cover;background-position-x: center;background-position-y: bottom;position: relative;overflow: hidden;">
     <img src="/assets/metodologia/FRAME7/02.png" style="position: absolute;width: 100%;bottom: 0;">
     <div class="container h-100">
       <div class="row h-100">
