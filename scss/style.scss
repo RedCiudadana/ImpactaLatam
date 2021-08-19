@@ -302,14 +302,25 @@ border : 1px solid #383838;
 }
 
 .slider-2 {
-  max-height: 600px;
-  height: 80vw;
+  // max-height: 600px;
+  height: 42vw;
   overflow: hidden;
   background-image: url('/assets/img/SLIDER_02.png');
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: contain;
   background-color: #3aa7de;
+}
+
+.slider-3 {
+  // max-height: 600px;
+  height: 38vw;
+  overflow: hidden;
+  background-image: url('/assets/img/SLIDER.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  // background-color: #3aa7de;
 }
 
 @include media-breakpoint-up(md) {
