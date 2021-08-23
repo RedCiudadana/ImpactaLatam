@@ -471,4 +471,9 @@
       }, 3000);
     }
   </script>
+  <script>
+    $('#intro').on('hidden.bs.modal', function (event) {
+      $('#intro iframe').attr('src', $('#intro iframe').attr('src'));
+    })
+  </script>
 {% endblock %}
