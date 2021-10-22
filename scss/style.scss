@@ -323,6 +323,17 @@ border : 1px solid #383838;
   // background-color: #3aa7de;
 }
 
+.slider-4 {
+  // max-height: 600px;
+  height: 38vw;
+  overflow: hidden;
+  background-image: url('/assets/img/slider-4.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  // background-color: #3aa7de;
+}
+
 @include media-breakpoint-up(md) {
   .slider-2 {
     background-image: url('/assets/img/slider_map.png');
